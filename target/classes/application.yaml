@@ -1,0 +1,28 @@
+server:
+  port: 8098    #default port where the service will be started
+
+#zuul:  
+# routes:  
+#    empservice:
+#      path:  /api/**      
+#      url: http://localhost:8099
+ 
+#eureka:         #tells about the Eureka server details and its refresh time
+#  instance:
+#    leaseRenewalIntervalInSeconds: 1
+#    leaseExpirationDurationInSeconds: 2
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8762/eureka/
+#    register-with-eureka: true      
+#    cache-refresh-executor-thread-pool-size: 5      
+ 
+spring:    
+  application:
+    name: employee-service   #current service name to be used by the eureka server
+  resources:
+    add-mappings: true
+
+logging:
+  level:
+    application.rest.v1: DEBUG
