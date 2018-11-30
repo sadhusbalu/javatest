@@ -1,5 +1,5 @@
 server:
-  port: 8098    #default port where the service will be started
+  port: 8080    #default port where the service will be started
 
 #zuul:  
 # routes:  
